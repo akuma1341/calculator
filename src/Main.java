@@ -5,6 +5,8 @@ public class Main {
 
     public static void main(String[] args) {
         boolean running = true;
+        int firstNumber;
+        int secondNumber;
         String startMessage = "Выберите действие:"
                 + "\n" + "1. Сложение;"
                 + "\n" + "2. Вычитание;"
@@ -26,48 +28,48 @@ public class Main {
                     break;
 
                 case 1:
-                    int firstSumNumber = enterNumber();
-                    int secondSumNumber = enterNumber();
-                    System.out.println(Calculator.sum(firstSumNumber, secondSumNumber));
+                    firstNumber = enterNumber();
+                    secondNumber = enterNumber();
+                    System.out.println(Calculator.sum(firstNumber, secondNumber));
                     break;
 
                 case 2:
-                    int firstDifNumber = enterNumber();
-                    int secondDifNumber = enterNumber();
-                    System.out.println(Calculator.subtract(firstDifNumber, secondDifNumber));
+                    firstNumber = enterNumber();
+                    secondNumber = enterNumber();
+                    System.out.println(Calculator.subtract(firstNumber, secondNumber));
                     break;
 
                 case 3:
-                    int firstMultiNumber = enterNumber();
-                    int secondMultiNumber = enterNumber();
-                    System.out.println(Calculator.multiply(firstMultiNumber, secondMultiNumber));
+                    firstNumber = enterNumber();
+                    secondNumber = enterNumber();
+                    System.out.println(Calculator.multiply(firstNumber, secondNumber));
                     break;
 
                 case 4:
-                    int firstDivNumber = enterNumber();
-                    int secondDivNumber = enterNumber();
-                    System.out.println(Calculator.divide(firstDivNumber, secondDivNumber));
+                    firstNumber = enterNumber();
+                    secondNumber = enterNumber();
+                    System.out.println(Calculator.divide(firstNumber, secondNumber));
                     break;
 
                 case 5:
-                    int sinNumber = enterNumber();
-                    System.out.println(Calculator.sin(sinNumber));
+                    firstNumber = enterNumber();
+                    System.out.println(Calculator.sin(firstNumber));
                     break;
 
                 case 6:
-                    int cosNumber = enterNumber();
-                    System.out.println(Calculator.cos(cosNumber));
+                    firstNumber = enterNumber();
+                    System.out.println(Calculator.cos(firstNumber));
                     break;
 
                 case 7:
-                    int rootNumber = enterNumber();
-                    System.out.println(Calculator.root(rootNumber));
+                    firstNumber = enterNumber();
+                    System.out.println(Calculator.root(firstNumber));
                     break;
 
                 case 8:
-                    int powerNumber = enterNumber();
-                    int powerScale = enterScale();
-                    System.out.println(Calculator.power(powerNumber, powerScale));
+                    firstNumber = enterNumber();
+                    secondNumber = enterScale();
+                    System.out.println(Calculator.power(firstNumber, secondNumber));
                     break;
 
                 default:
