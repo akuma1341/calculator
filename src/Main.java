@@ -30,45 +30,53 @@ public class Main {
                 case 1:
                     firstNumber = enterNumber();
                     secondNumber = enterNumber();
+                    System.out.print(firstNumber + " + " + secondNumber + " = ");
                     System.out.println(Calculator.sum(firstNumber, secondNumber));
                     break;
 
                 case 2:
                     firstNumber = enterNumber();
                     secondNumber = enterNumber();
+                    System.out.print(firstNumber + " - " + secondNumber + " = ");
                     System.out.println(Calculator.subtract(firstNumber, secondNumber));
                     break;
 
                 case 3:
                     firstNumber = enterNumber();
                     secondNumber = enterNumber();
+                    System.out.print(firstNumber + " * " + secondNumber + " = ");
                     System.out.println(Calculator.multiply(firstNumber, secondNumber));
                     break;
 
                 case 4:
                     firstNumber = enterNumber();
                     secondNumber = enterNumber();
+                    System.out.print(firstNumber + " / " + secondNumber + " = ");
                     System.out.println(Calculator.divide(firstNumber, secondNumber));
                     break;
 
                 case 5:
                     firstNumber = enterNumber();
+                    System.out.print("sin(" + firstNumber + ") = ");
                     System.out.println(Calculator.sin(firstNumber));
                     break;
 
                 case 6:
                     firstNumber = enterNumber();
+                    System.out.print("cos(" + firstNumber + ") = ");
                     System.out.println(Calculator.cos(firstNumber));
                     break;
 
                 case 7:
                     firstNumber = enterNumber();
+                    System.out.print("sqrt(" + firstNumber + ") = ");
                     System.out.println(Calculator.root(firstNumber));
                     break;
 
                 case 8:
                     firstNumber = enterNumber();
                     secondNumber = enterScale();
+                    System.out.print(firstNumber + " ^ " + secondNumber + " = ");
                     System.out.println(Calculator.power(firstNumber, secondNumber));
                     break;
 
